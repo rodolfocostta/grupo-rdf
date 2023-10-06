@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo-RDF</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header >
+      <table >
+          <tr >
+                <img src="Imagem/Logo.jpg" alt="logo" scr="logo.jpg">
+          </tr>
+                      
+        </table>
+    </header> 
+    <main>
+      <nav>
+          <ul>
+              
+            <div class="topnav">
+              <a href="index.html">Inicio</a>
+              <a href="Quemsomos.html">Quem somos</a>
+              <a href="Serviços.html">Serviços</a>
+              <a href="Contato.html">Contato</a>
+              <a href="/grupo-rdf/blog/index.php">Blog</a>
+            </div>
+            
+          </ul> 
+      </nav>
+  </main>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 4</div>
+              <img src="Imagem/tecnologia1.jpg" style="width:100%;">
+              <div class="text">Fonte:https://google/images</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 4</div>
+              <img src="Imagem/tecnologia2.jpg" style="width:100%;">
+              <div class="text">Fonte: https://drixit.com/pt/artigo-da-opiniao-tecnologia-e-sst</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 4</div>
+              <img src="Imagem/tecnologia3.jpg" style="width:100%;">
+              <div class="text">Fonte: https://itforum.com.br/noticias/6-tendencias-que-impactarao-a-tecnologia-empresarial/</div>
+            </div>
+			
+			      <div class="mySlides fade">
+              <div class="numbertext">4 / 4</div>
+              <img src="Imagem/tecnologia4.jpg" style="width:100%;">
+              <div class="text">Fonte: https://pt.pngtree.com/free-slide/artificial-intelligence-ai-robot-product-release-ppt-google-slide-powerpoint-template_17164.html</div>
+            </div>
+            
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+              <span class="dot" onclick="currentSlide(4)"></span> 
+            </div>
+            </div>
+            
+            <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+          </div> 
+        </div> 
+      
+           
+        <footer>
+          <div class="footer">
+              <p>"A tecnologia é só uma ferramenta. No que se refere a 
+                  motivar as crianças e conseguir que trabalhem juntas,
+                  um professor é recurso importante".</p>
+              <p>Bill Gates</p>
+              <p> &COPY;Grupo-RDF </p>
+          </div>
+      </footer>  
+  </body>
+  </html> 
